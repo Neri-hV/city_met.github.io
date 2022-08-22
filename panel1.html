@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <!-- reconoce correctamente los acentos en español-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--que se ajuste al ancho del dispositivo-->
+<html lang= "es"> <!--lang define el idioma de la página*/-->
+<link rel="stylesheet" href="tooltip-code.css"> <!--enlace CSS del tooltip-->
+  
+<!--PANEL 1--> 
+<body style="text-align:center;">
+<div id="container1" class="carousel__snapper"><!-- Inicio del contenedor-->
+ 
+<!--ENCABEZADO-->
+ <header style= "font-size: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: rgb(58, 98, 172);
+  color:rgb(183, 170, 230);
+  padding: 25px;">La ciudad es un ecosistema
+  </header>
+
+<!--IMÁGENES CON VENTANA EMERGENTE-->
+<div  id= "ciudad" class="tooltip" style="
+  z-index:2;
+  position:absolute;
+  left:400px;
+  top:400px;
+  width:600px;
+  height:300px;
+  background-image:url('ciudad1-gris.png');
+  background-size:600px 300px"> 
+  <span class="tooltiptext"><strong><p style="text-align: center; line-height: 0px;">Isla de calor</p></strong><hr>Acumula calor generado por las estructuras urbanas, irradiaciones
+  de los rayos solares, y estructuras antropogénicas. La configuración de la urbe y la geografía de la región contribuyen a este efecto. La poca vegetación genera menor evapotranspiración
+  y mayor sequedad.</span>
+</div>
+<div id= "arbol" class="tooltip" style="
+  position: absolute; 
+  z-index: 3; 
+  top: 490px; 
+  left: 308px;
+  width:190px;
+  height: 207px;
+  background-image: url('arbol.png');
+  background-size: 190px 207px;"> 
+  <span class="tooltiptext"><strong><p style="text-align: center; line-height: 0px;">Naturaleza</p></strong><hr>Escasa vegetación con fauna urbana cosmopolita y poca fauna silvestre:
+  palomas, roedores, insectos vectores de enfermedades y animales domésticos callejeros.</span>
+</div>
+<div id= "industria" class="tooltip" style="
+  z-index: 3;
+  position: absolute;  
+  top: 590px; 
+  left: 430px;
+  width:230px;
+  height: 110px;
+  background-image:url('industria.png');
+  background-size:230px 110px;"> 
+  <span class="tooltiptext"><strong><p style="text-align: center; line-height: 0px;">Industrias</p></strong><hr>En base a energía fósil y recursos no renovables, generan emisiones que contribuyen
+  a la creación de un efecto invernadero local además de la generación de residuos sólidos y aguas residuales.</span>
+</div>
+<div id="desagüe" class="tooltip" style="
+  z-index: 3;
+  position: absolute;  
+  top: 670px; 
+  left: 290px;
+  width:200px;
+  height: 100px;
+  background-image:url('esgoto.png');
+  background-size:200px 100px;"> 
+  <span class="tooltiptext"><strong><p style="text-align: center; line-height: 0px;">Aguas servidas</p></strong><hr>Lagunas de oxidación para el tratamiento de aguas residuales procedentes de hogares, 
+  comercios e industrias y de los colectores pluviales. Puede haber deficiencias en zonas de asentamiento urbanos informales. Colectores pluviales con exceso de residuos sólidos</span>
+</div>
+<div id= "lluvia" class="tooltip" style="
+  z-index: 3;
+  position: absolute;  
+  top: 385px; 
+  left: 580px;
+  width:90px;
+  height: 60px;
+  background-image:url('lluvia-tormenta.png');
+  background-size:90px 60px;"> 
+  <span class="tooltiptext"><strong><p style="text-align: center; line-height: 0px;">Lluvia</p></strong><hr>Lluvias ácidas causadas por combustión de combustibles fósiles regiones fuertemente industrializadas.
+  Escazes de lluvia déficit de evapotranspiración (temperatura elevada pocas plantas, suelos secos). Inundaciones causadas por obstrucción de colectores pluviales en zonas lluviosas.</span>
+</div>
+<div id= "mototaxi" class="tooltip" style="
+  z-index: 5;
+  position: absolute;  
+  top: 765px; 
+  left: 745px;
+  width:90px;
+  height: 60px;
+  background-image:url('gorgojo.png');
+  background-size:90px 60px;"> 
+  <span class="tooltiptext"><strong><p style="text-align: center; line-height: 0px;">Transporte</p></strong><hr>Saturación del parque automotor, uso de combustible generadores de monóxido de carbono, ruidos,
+  embotellamientos, caos vehicular.</span>
+</div>
+<div id= "energia" class="tooltip" style="
+  z-index: 4;
+  position: absolute;  
+  top: 430px; 
+  left: 1035px;
+  width:80px;
+  height: 100px;
+  background-image:url('foco-amarillo.png');
+  background-size:80px 100px;"> 
+  <span class="tooltiptext"><strong><p style="text-align: center; line-height: 0px;">Energía fósil</p></strong><hr>Toda la energía de la ciudad basada en el uso de derivados de petróleo como ser gas, diésel, 
+  kerosene, gasolina. Uso de carbón o leña en determinadas regiones para calefacción, cocina o industria.
+  </span>
+</div>
+<div id= "salidas" class="tooltip" style="
+  z-index: 2;
+  position: absolute;  
+  top: 415px; 
+  left: 75px;
+  width:210px;
+  height: 55px;
+  background-image:url('SALIDAS.png');
+  background-size:210px 55px;"> 
+  <span class="tooltiptext"><strong><p style="text-align: center; line-height: 20px;">Metabolismo urbano SALIDAS<br>Genera demasiada ENTROPÍA</br></p></strong><hr> Como un organismo la ciudad <em>"Excreta desechos":</em> <li>Exceso de residuos sólidos
+  no tratados</li><li>Aguas contaminadas</li><li>Gases contaminantes a la atmósfera</li></span>
+</div>
+<div id= "entradas" class="tooltip" style="
+  z-index: 2;
+  position: absolute;  
+  top: 350px; 
+  left: 1148px;
+  width:210px;
+  height: 55px;
+  background-image:url('ENTRADAS.png');
+  background-size:210px 55px;"> 
+  <span class="tooltiptext"><strong><p style="text-align: center; line-height: 0px;">Metabolismo urbano ENTRADAS</p></strong><hr> Como un organismo la ciudad <em>"Consume recursos en exceso":</em> <li>Materias primas Industria</li>
+  <li>Reservas de agua</li><li>Energía - combustibles</li><li> Producción de alimentos</li></span>
+</div>
+<!--IMÁGENES FIJAS-->
+<div id="city">
+  <img src="ciudad.png" style="position: absolute;
+  z-index: 4; 
+  top: 545px; 
+  left: 750px;
+  width:225px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id="isla" style="position: absolute;
+  top:350px;
+  left: 255px;
+  background: rgb(245, 219, 73);
+  border-radius: 50%;
+  width: 900px;
+  height: 450px;
+  opacity:30%">
+</div>
+<div id= "birds" >
+  <img src="birds.png" style= "position: absolute;
+  z-index: 2; 
+  top: 440px; 
+  left: 310px;
+  width:280px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "rata">
+  <img src="rata.png" style= "position: absolute; 
+  z-index: 4;
+  top: 670px; 
+  left: 375px;
+  width:35px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "desechos" >
+  <img src="garbage2.png" style= "position: absolute;
+  z-index: 5; 
+  top: 715px; 
+  left: 285px;
+  width:300px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "persona" >
+  <img src="garbage1.png" style= "position: absolute;
+  z-index: 4; 
+  top: 665px; 
+  left: 430px;
+  width:75px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "basura" >
+  <img src="basura.png" style= "position: absolute;
+  z-index: 3; 
+  top: 720px; 
+  left: 185px;
+  width:240px;
+  max-width: 100%;
+  height: auto;">
+</div>
+
+<div id= "basura2" >
+  <img src="garbage.png" style= "position: absolute;
+  z-index: 3; 
+  top: 755px; 
+  left: 355px;
+  width:170px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "electronicos" >
+  <img src="electronic-waste.png" style= "position: absolute;
+  z-index: 5; 
+  top: 755px; 
+  left: 450px;
+  width:140px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "agua-contaminada" >
+  <img src="water-pollution.png" style= "position: absolute;
+  z-index: 2; 
+  top: 711px; 
+  left: 80px;
+  width:200px;
+  max-width: 100%;
+  border-radius: 25%;
+  height: auto;">
+</div>
+<div id="cuadrado" style="position: absolute;
+  top:670px;
+  left: 255px;
+  background: #cbced5;
+  border-radius: 10%;
+  width: 90px;
+  height: 65px;">
+</div>
+<div id="cuadrado2" style="position: absolute;
+  top:744px;
+  left: 265px;
+  background-image: url(fondoasfalto.png);
+  border-radius: 10%;
+  width: 230px;
+  height: 87px;">
+</div>
+<div id="acera" style="position: absolute;
+  top:695px;
+  left: 480px;
+  background:gainsboro;
+  border-radius: 0%;
+  width: 507px;
+  height: 20px;">
+</div>
+<div id="asfalto" style="position: absolute;
+  top:714px;
+  left: 469px;
+  background: linear-gradient(180deg , gray 0px, white 50px,gray 55px);
+  border-radius: 10%;
+  width: 570px;
+  height: 125px">
+</div>
+<div id="fondo-der" style="position: absolute;
+  z-index: -1;
+  top:590px;
+  left: 984px;
+  background: #da987c;
+  border-radius: 50%;
+  width: 355px;
+  height: 185px;
+  opacity: 50%;">
+</div>
+<div id="fondo-der2" style="position: absolute;
+  z-index: 1;
+  top:620px;
+  left: 1030px;
+  background: #7f4c26;
+  border-radius: 50%;
+  width: 285px;
+  height: 285px;
+  opacity: 20%;">
+</div>
+<div id= "sewage" >
+  <img src="esgoto2.png" style= "position: absolute;
+  z-index: 2; 
+  top: 668px; 
+  left: 80px;
+  width:225px;
+  max-width: 100%;
+  border-radius: 25%;
+  height: auto;">
+</div>
+<div id= "avion" >
+  <img src="avion.png" style= "position: absolute;
+  z-index: 3; 
+  top: 450px; 
+  left: 700px;
+  width:90px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "ardilla" >
+  <img src="ardilla.png" style= "position: absolute;
+  z-index: 4; 
+  top: 618px; 
+  left: 350px;
+  width:40px;
+  max-width: 100%;
+  height: auto;">
+</div>
+  <div id= "gente" >
+  <img src="people.png" style= "position: absolute;
+  z-index: 4; 
+  top: 645px; 
+  left: 645px;
+  width:240px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "auto" >
+  <img src="coche1.png" style= "position: absolute;
+  z-index: 4; 
+  top: 700px; 
+  left: 630px;
+  width:105px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "camion" >
+  <img src="camion.png" style= "position: absolute;
+  z-index: 4; 
+  top: 690px; 
+  left: 830px;
+  width:200px;
+  max-width: 100%;
+  height: auto;">
+</div>    
+<div>
+  <img id ="monoxido1" src="smog.png" style= "position: absolute;
+  z-index: 4; 
+  top: 690px; 
+  left: 550px;
+  width:100px;
+  max-width: 100%;
+  height: auto;">
+</div>    
+<div>
+  <img id="monoxido2" src="smog.png" style= "position: absolute;
+  z-index: 4; 
+  top: 760px; 
+  left: 680px;
+  width:100px;
+  max-width: 100%;
+  height: auto;">
+</div>    
+<div>
+  <img id="monoxido3" src="smog.png" style= "position: absolute;
+  z-index: 4; 
+  top: 700px; 
+  left: 750px;
+  width:100px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "fuego" >
+  <img src="fire.png" style= "position: absolute;
+  z-index: 5; 
+  top: 660px; 
+  left: 355px;
+  width:100px;
+  max-width: 100%;
+  height: auto;">
+</div>     
+<div id= "torre" >
+  <img src="torre-petroleo.png" style= "position: absolute;
+  z-index: 3; 
+  top: 565px; 
+  left: 975px;
+  width:70px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "tronco" >
+  <img src="tronco.png" style= "position: absolute;
+  z-index: 3; 
+  top: 540px; 
+  left: 1070px;
+  width:90px;
+  max-width: 100%;
+  border-style: solid;
+  border-color: black;
+  background-color: khaki;
+  border-radius: 40%;
+  height: auto;">
+</div>
+<div id= "talados" >
+  <img src="talados.png" style= "position: absolute;
+  z-index: 2; 
+  top: 540px; 
+  left: 1167px;
+  width:100px;
+  max-width: 100%;
+  background-color: honeydew;
+  border-radius: 40%;
+  border-style: solid;
+  border-color: black;
+  height: auto;">
+</div>
+
+<div id= "alimentos" >
+  <img src="vegetable.png" style= "position: absolute;
+  z-index: 3; 
+  top: 610px; 
+  left: 1020px;
+  width:80px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "carne" >
+  <img src="meat.png" style= "position: absolute;
+  z-index: 3; 
+  top: 590px; 
+  left: 1090px;
+  width:75px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "comida" >
+  <img src="food.png" style= "position: absolute;
+  z-index: 3; 
+  top: 655px; 
+  left: 1045px;
+  width:75px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "lacteos" >
+  <img src="milk.png" style= "position: absolute;
+  z-index: 3; 
+  top: 645px; 
+  left: 1120px;
+  width:75px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "bolsas" >
+  <img src="plastic-bags.png" style= "position: absolute;
+  z-index: 3; 
+  top: 695px; 
+  left: 1044px;
+  width:100px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "productos" >
+  <img src="plastic-products.png" style= "position: absolute;
+  z-index: 2; 
+  top: 680px; 
+  left: 1150px;
+  width:120px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "electrodomesticos" >
+  <img src="electrodomesticos.png" style= "position: absolute;
+  z-index: 2; 
+  top: 589px; 
+  left: 1170px;
+  width:190px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "consumo" >
+  <img src="consumo.png" style= "position: absolute;
+  z-index: 2; 
+  top: 755px; 
+  left: 1070px;
+  width:200px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "sol" >
+  <img src="sol.png" style= "position: absolute;
+  z-index: 1; 
+  top: 200px; 
+  left: 780px;
+  width:200px;
+  max-width: 100%;
+  border-radius: 10%;
+  height: auto;">
+</div>
+<div id="entropia">
+  <img src="entropía.png" style="position: absolute;
+  z-index: 1;
+  top:361px;
+  left: 135px;
+  width:180px;
+  max-width: 100%;
+  height: auto;"> 
+</div>
+<!--FLECHA-->
+<div id="flecha1" style="position:absolute;
+  top:500px;
+  left:230px;
+  width: 25px;
+  height: 60px;
+  background:rgb(255, 0, 119);
+  transform:rotate(45deg);">
+</div>
+<div id="triangulo1" style="position:absolute;
+  top:540px;
+  left:195px;
+  width:0px;
+  height:0px;
+  border-left:25px solid transparent;
+  border-right:25px solid transparent;
+  border-top:25px solid rgb(255, 0, 119);
+  transform: rotate(45deg);">
+</div>
+<div id="flecha2" style="position:absolute;
+  top:445px;
+  left:1300px;
+  width: 25px;
+  height: 60px;
+  background:rgb(27, 252, 83);
+  transform:rotate(45deg);">
+</div>
+<div id="triangulo2" style="position:absolute;
+  top:490px;
+  left:1260px;
+  width:0px;
+  height:0px;
+  border-left:25px solid transparent; 
+  border-right:25px solid transparent; 
+  border-top:25px solid rgb(27, 252, 83);
+  transform: rotate(45deg);">
+</div>
+<div id="flecha3">
+  <img src="flechanaranja.png" style="position: absolute;
+  z-index: 1;
+  top:400px;
+  left: 300px;
+  width:40px;
+  max-width: 100%;
+  height: auto;"> 
+</div>
+</div><!--Fin contenedor1-->
+ <script src="moveme.js"></script><!--aquí debe estar dentro del body-->
+</body><!--Fin del body-->
+</html><!--Fin-->

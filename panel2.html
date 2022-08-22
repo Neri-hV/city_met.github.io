@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> <!-- reconoce correctamente los acentos en español-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--que se ajuste al ancho del dispositivo-->
+<html lang= "es"> <!--lang define el idioma de la página*/-->
+
+<link rel="stylesheet" href="tooltip-code.css"> <!--enlace CSS del tooltip-->
+ 
+<!--PANEL 2--> 
+<body style="text-align:center;">
+<div id="container2" class="carousel__snapper"><!-- Inicio del contenedor-->
+
+<!--ENCABEZADO-->
+<header style= "font-size: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: rgb(58, 172, 96);
+  color:rgb(183, 170, 230);
+  padding: 25px;">La ciudad es amigable
+</header>
+
+<!--IMÁGENES CON VENTANA EMERGENTE-->
+<div  id= "ciudad2" class="tooltip" style="
+  z-index:2;
+  position:absolute;
+  left:400px;
+  top:400px;
+  width:600px;
+  height:300px;
+  background-image:url('ciudad1.png');
+  background-size:600px 300px"> 
+  <span class="tooltiptext"><strong><p style="text-align: center; line-height: 0px;">Ciudad sostenible</p></strong><hr> La ciudad es eficiente brinda calidad de vida
+   a sus habitantes, hace uso racional de los recursos renovables y no renovables. Mantiene una economia preservando el medio ambiente.</span>
+</div>
+<div id= "industria2" class="tooltip" style="
+  z-index: 4;
+  position: absolute;  
+  top: 580px; 
+  left: 420px;
+  width:240px;
+  height: 120px;
+  background-image:url('industry-smart.png');
+  background-size:240px 120px;"> 
+  <span class="tooltiptext"><strong><p style="text-align: center; line-height: 0px;">Industria sustentable</p><hr></strong>Uso de energías renovables para la producción. Realiza una
+  clasificación eficiente de residuos sólidos y tratamiento previo de aguas residuales en tanques de oxidación de acuerdo a la norma ambiental. Responsabilidad social con la comunidad y medio ambiental.</span>
+</div>
+<div id= "energia2" class="tooltip" style="
+  z-index: 3;
+  position: absolute;  
+  top: 430px; 
+  left: 1035px;
+  width:80px;
+  height: 100px;
+  background-image:url('eco-foco.png');
+  background-size:80px 100px;"> 
+  <span class="tooltiptext"><strong><p style="text-align: center; line-height: 0px;">Energía "Verde" Renovable</p></strong><hr><em>Energía eólica:</em> aprovechamiento de la cinética de los vientos para generación
+  de energía eléctrica. <em>Energía solar:</em> aprovechamiento de la radiación solar absorvida por medio de paneles para su transformación eléctrica. <em>Energía hidráulica también usa un recurso renovable pero el impacto
+  negativo a las comunidades biológicas es considerable.</em></span>
+</div>
+<div id="desagüe2" class="tooltip" style="
+  z-index: 4;
+  position: absolute;  
+  top: 667px; 
+  left: 280px;
+  width:200px;
+  height: 100px;
+  border-radius: 20%;
+  background-image:url('sewage-plant.png');
+  background-size:200px 100px;"> 
+  <span class="tooltiptext"><strong><p style="text-align: center; line-height: 0px;">Aguas residuales</p></strong><hr>Domésticas, pluviales e industriales depuradas en lagunas de oxidación
+  que canalicen el agua depurada a los ríos. Recolectores pluviales domésticos en regiones con precipitación anual elevada para su reutilización.</span>
+</div>
+<div id= "arbol2" class="tooltip" style="
+  position: absolute; 
+  z-index: 3; 
+  top: 490px; 
+  left: 280px;
+  width:190px;
+  height: 207px;
+  background-image: url('tree-flower.png');
+  background-size: 190px 207px"> 
+  <span class="tooltiptext"><strong><p style="text-align: center; line-height: 0px;">Naturaleza</p></strong><hr>Parques urbanos, con flora nativa que permite la permanencia de algunas especies
+  de fauna silvestre de aves, pequeños mamíferos, anfibios e insectos, que conviven con la fauna cosmopolita. Tenencia responsable de animales domésticos.</span>
+</div>
+<div id= "eco-car" class="tooltip" style="
+  z-index: 5;
+  position: absolute;  
+  top: 765px; 
+  left: 745px;
+  width:90px;
+  height: 60px;
+  background-image:url('eco-car.png');
+  background-size:90px 60px;"> 
+  <span class="tooltiptext"><strong><p style="text-align: center; line-height: 0px;">Transporte eficiente</p></strong><hr>Una ciudad desarrollada no es aquella en que 
+  sus habitantes tengan más automóviles per cápita, sino en la que sus ciudadanos usan el transporte colectivo masivo a base de energías renovables. Evita el excesivo desplazamiento.</span>
+</div>
+<div id= "huerta" class="tooltip" style="
+  z-index: 4;
+  position: absolute;  
+  top: 630px; 
+  left: 1080px;
+  width:100px;
+  height: 90px;
+  border-radius: 10%;
+  background-image:url('farm.png');
+  background-size:100px 90px;"> 
+  <span class="tooltiptext"><strong><p style="text-align: center; line-height: 0px;">Huertos urbanos</p></strong><hr>Frutas y legumbres para el abastecimiento comunitario 
+  o para la venta minorista. Granjas urbanas para el abastecimiento de huevos, leche, carne. Reforestación local con flora regional.</span>
+</div>
+<div id= "lluvia2" class="tooltip" style="
+  z-index: 3;
+  position: absolute;  
+  top: 385px; 
+  left: 580px;
+  width:90px;
+  height: 60px;
+  background-image:url('nube.png');
+  background-size:90px 60px;"> 
+  <span class="tooltiptext"><strong><p style="text-align: center; line-height: 0px;">Lluvias locales</p></strong><hr>Con un adecuado recolección y tratamiento de aguas pluviales, 
+  mantenimiento de la flora local se garantiza una adecuada evapotranspiración contribuyendo al equilibrio del ciclo del agua.</span>
+</div>
+<div id= "entradas2" class="tooltip" style="
+  z-index: 2;
+  position: absolute;  
+  top: 350px; 
+  left: 1148px;
+  width:210px;
+  height: 55px;
+  background-image:url('ENTRADAS.png');
+  background-size:210px 55px;"> 
+  <span class="tooltiptext"><strong><p style="text-align: center; line-height: 0px;">Metabolismo urbano ENTRADAS</p></strong><hr> Como un organismo la ciudad <em>"Consume recursos de manera sostenible":</em> <li>Materias primas industria "verde"</li>
+  <li>Uso eficiente del agua potable.</li><li>Energías renovables para la industria o uso doméstico.</li><li>Producción local y comunitaria de alimentos.</li></span>
+</div>
+<div id= "salidas2" class="tooltip" style="
+  z-index: 2;
+  position: absolute;  
+  top: 415px; 
+  left: 75px;
+  width:190px;
+  height: 55px;
+  background-image:url('SALIDAS2.png');
+  background-size:190px 55px;"> 
+  <span class="tooltiptext"><strong><p style="text-align: center; line-height: 20px;">Metabolismo urbano SALIDAS<br>MENOS entropía</br></p></strong><hr> Como un organismo la ciudad <em>"genera residuos":</em> <li>Selección de residuos sólidos
+  para su reutilización o reciclaje. Poco % de residuos a tratar.</li><li>Aguas tratadas vertidas en los ríos.</li><li>Menor emisión de gases a la atmósfera</li></span></div>
+<!--IMÁGENES FIJAS-->
+<div id="isla2" style="position: absolute;
+  top:350px;
+  left: 255px;
+  background: rgb(161, 220, 228);
+  border-radius: 50%;
+  width: 900px;
+  height: 450px;
+  opacity:30%">
+</div>
+<div id= "sol2" >
+  <img src="sol.png" style= "position: absolute;
+  z-index: 1; 
+  top: 200px; 
+  left: 780px;
+  width:200px;
+  max-width: 100%;
+  border-radius: 10%;
+  height: auto;">
+</div>
+
+<div>
+<img id= "nube2" src="nube.png" style= "position: absolute;
+  z-index: 1; 
+  top: 415px; 
+  left: 430px;
+  width:70px;
+  max-width: 100%;
+  border-radius: 10%;
+  height: auto;">
+</div>
+<div id="edificio">
+  <img src="smart-energy.png" style="position: absolute;
+  z-index: 3; 
+  top: 545px; 
+  left: 750px;
+  width:240px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id="casas">
+  <img src="sostenible.png" style="position: absolute;
+  z-index: 3; 
+  top: 620px; 
+  left: 585px;
+  width:350px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "eolica" >
+  <img src="eolica.png" style= "position: absolute;
+  z-index: 2; 
+  top: 570px; 
+  left: 970px;
+  width:90px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id="solar-energia" >
+  <img src="solar.png" style= "position: absolute;
+  z-index: 3; 
+  top: 615px; 
+  left: 1000px;
+  width:80px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "laguna" >
+  <img src="estanque.png" style= "position: absolute;
+  z-index: 4; 
+  top: 700px; 
+  left: 420px;
+  width:100px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id="acera2" style="position: absolute;
+  z-index: 1;
+  top:695px;
+  left: 505px;
+  background:gainsboro;
+  border-radius: 0%;
+  width: 496px;
+  border-radius: 10%;
+  height: 20px;">
+</div>
+<div id="asfalto2" style="position: absolute;
+  top:714px;
+  left: 525px;
+  background: linear-gradient(180deg , gray 0px, white 50px,gray 55px);
+  width: 460px;
+  height: 125px">
+</div>
+<div id="pasto-izq" style="position: absolute;
+  z-index: -1;
+  top:695px;
+  left: 95px;
+  background:linear-gradient(180deg,green, rgb(224, 243, 156));
+  border-radius: 10%;
+  width: 430px;
+  height: 175px;">
+</div>
+<div id="pasto-der" style="position: absolute;
+  z-index: -1;
+  top:690px;
+  left: 984px;
+  background:linear-gradient(180deg,green, rgb(224, 243, 156), rgb(31, 147, 153));
+  border-radius: 10%;
+  width: 355px;
+  height: 185px;">
+</div>
+<div id= "bicicleta" >
+  <img src="bici-verde.png" style= "position: absolute;
+  z-index: 4; 
+  top: 795px; 
+  left: 1020px;
+  width:125px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "busverde" >
+  <img src="busverde.png" style= "position: absolute;
+  z-index: 4; 
+  top: 690px; 
+  left: 630px;
+  width:200px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "tren" >
+  <img src="train.png" style= "position: absolute;
+  z-index: 4; 
+  top: 755px; 
+  left: 550px;
+  width:150px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "rana">
+  <img src="frog.png" style= "position: absolute; 
+  z-index: 4;
+  top: 700px; 
+  left: 290px;
+  width:30px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "pato">
+  <img src="duck.png" style= "position: absolute; 
+  z-index: 4;
+  top: 745px; 
+  left: 390px;
+  width:60px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "mariposas">
+  <img src="butterflies.png" style= "position: absolute; 
+  z-index: 4;
+  top: 650px; 
+  left: 300px;
+  width:45px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "odonata">
+  <img src="dragonflies.png" style= "position: absolute; 
+  z-index: 4;
+  top: 714px; 
+  left: 455px;
+  width:45px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "birds2">
+  <img src="birds2.png" style= "position: absolute; 
+  z-index: 3;
+  top: 445px; 
+  left: 425px;
+  width:200px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "vaca" >
+  <img src="vaca.png" style= "position: absolute;
+  z-index: 5; 
+  top: 700px; 
+  left: 1070px;
+  width:75px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "cerdo" >
+  <img src="cerdo.png" style= "position: absolute;
+  z-index: 3; 
+  top: 720px; 
+  left: 1150px;
+  width:75px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "pollos" >
+  <img src="pollos.png" style= "position: absolute;
+  z-index: 3; 
+  top: 685px; 
+  left: 1180px;
+  width:55px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "reforestar">
+  <img src="plant-tree.png" style= "position: absolute; 
+  z-index: 2;
+  top: 550px;
+  left: 1165px;
+  width:170px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "compost" >
+  <img src="compost.png" style= "position: absolute;
+  z-index: 3; 
+  top: 660px; 
+  left: 1235px;
+  width:100px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "pantry" >
+  <img src="food-pantry.png" style= "position: absolute;
+  z-index: 2; 
+  top: 560px; 
+  left: 1100px;
+  width:55px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "electrodomesticos2" >
+  <img src="electro-solar.png" style= "position: absolute;
+  z-index: 2; 
+  top: 760px; 
+  left: 1190px;
+  width:110px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "electrodomesticos2" >
+  <img src="electronic-recycle.png" style= "position: absolute;
+  z-index: 2; 
+  top: 795px; 
+  left: 407px;
+  width:85px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "rio" >
+  <img src="clean-river.png" style= "position: absolute;
+  z-index: 3; 
+  top: 595px; 
+  left: 95px;
+  width:200px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "reciclaje" >
+  <img src="recycle.png" style= "position: absolute;
+  z-index: 3; 
+  top: 755px; 
+  left: 175px;
+  width:100px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "persona2" >
+  <img src="persona.png" style= "position: absolute;
+  z-index: 4; 
+  top: 700px; 
+  left: 100px;
+  width:75px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "runers" >
+  <img src="running.png" style= "position: absolute;
+  z-index: 3; 
+  top: 740px; 
+  left: 280px;
+  width:100px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id= "familia" >
+  <img src="family.png" style= "position: absolute;
+  z-index: 4; 
+  top: 640px; 
+  left: 865px;
+  width:70px;
+  max-width: 100%;
+  height: auto;">
+</div>
+<div id="entropia2">
+  <img src="entropía2.png" style="position: absolute;
+  z-index: 1;
+  top:361px;
+  left: 230px;
+  width:180px;
+  max-width: 100%;
+  height: auto;"> 
+</div>
+<!--FLECHA-->
+<div id="flecha4" style="position:absolute;
+  top:500px;
+  left:230px;
+  width: 25px;
+  height: 60px;
+  background:rgb(200, 255, 0);
+  transform:rotate(45deg);">
+</div>
+<div id="triangulo4" style="position:absolute;
+  top:540px;
+  left:195px;
+  width:0px;
+  height:0px;
+  border-left:25px solid transparent;
+  border-right:25px solid transparent;
+  border-top:25px solid rgb(200, 255, 0);
+  transform: rotate(45deg);">
+</div>
+<div id="flecha5" style="position:absolute;
+  top:445px;
+  left:1300px;
+  width: 25px;
+  height: 60px;
+  background:rgb(27, 252, 83);
+  transform:rotate(45deg);">
+</div>
+<div id="triangulo5" style="position:absolute;
+ top:490px;
+  left:1260px;
+  width:0px;
+  height:0px;
+  border-left:25px solid transparent; 
+  border-right:25px solid transparent; 
+  border-top:25px solid rgb(27, 252, 83);
+  transform: rotate(45deg);">
+</div>
+<div id="flecha6">
+  <img src="flechanaranja.png" style="position: absolute;
+  z-index: 1;
+  top:400px;
+  left: 300px;
+  width:40px;
+  max-width: 100%;
+  height: auto;"> 
+</div>
+</div><!--Fin contenedor2-->
+ <script src="moveme.js"></script><!--aquí debe estar dentro del body-->
+</body><!--Fin del body-->
+</html><!--Fin---->
