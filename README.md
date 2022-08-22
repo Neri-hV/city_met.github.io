@@ -1,2 +1,3 @@
 # city_metabolism.github.io
-my first html, js and css work
+My first html, js and css work
+Metabolismo urbano by Neri HV
